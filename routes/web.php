@@ -20,6 +20,11 @@ Route::get('/', function () {
 Route::get('/page/dharura', function () {
     return view('/page/dharura');
 });
+// Route::get('/page/dharuraview', function () {
+//     return view('/page/dharuraview');
+// });
+
+Route::get('/page/dharuraview', 'EmergencyController@index')->name('dharula');
 
 Route::get('page/maendeleo', function () {
     return view('/page/maendeleo');
