@@ -3,6 +3,7 @@
 @section('content')
 
 
+<div>
 <table class="table table-striped custab">
     
     
@@ -20,6 +21,7 @@
             <th>Kiasi cha Mkopo</th>
             <th>Lengo la Mkopo</th>
             <th>Muda wa Kulipa</th>
+            
             <th>Awamu za kulipa</th>
         </tr>
         @if($loans->count() >=1)
@@ -47,6 +49,7 @@
 @endforeach
 @endif
 </table>
+</div>
 
  
 @endsection
