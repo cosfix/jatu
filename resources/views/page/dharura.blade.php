@@ -7,10 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
+<!-- //error printing -->
+
 
 <form class="form-horizontal" action="{{url('emergency')}}" method="POST">
 <fieldset>
-
+{{csrf_field()}}
 <!-- Form Name -->
 <legend>Fomu Ya Mkopo Wa dharura</legend>
 
