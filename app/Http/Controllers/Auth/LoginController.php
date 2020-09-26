@@ -35,7 +35,16 @@ class LoginController extends Controller
     {
         return 'dashboard';
     }
+    elseif(Auth::user()->usertype == 'chair')
+{
+        return 'chair';
+    }
+    elseif(Auth::user()-usertype == 'loanofficer')
+{
+        return 'loanofficer';
+    }
     else{
+
         return 'home';
     }
 }
