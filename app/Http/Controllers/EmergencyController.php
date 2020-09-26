@@ -13,7 +13,8 @@ class EmergencyController extends Controller
      */
     public function index()
     {
-        //
+        $loans = Emergency::get(); 
+        return view('page.dharuraview',compact('loans') );
     }
 
     /**
@@ -66,7 +67,7 @@ class EmergencyController extends Controller
 
         ]);
         $loan1->save();
-        return redirect()->back();
+        return redirect()->back(); 
     }
 
     /**
