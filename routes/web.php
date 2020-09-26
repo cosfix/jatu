@@ -34,5 +34,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('emergency', 'EmergencyController');
 
+// mkopo wa maendeleo
+Route::get('/maendeleo/maendeleo','MaendeleoController@create');
+Route::resource('maendeleo', 'MaendeleoController');
+
 
 

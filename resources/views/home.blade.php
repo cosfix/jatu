@@ -21,7 +21,7 @@
 
 
 
-<a href="{{url('/page/maendeleo')}}" class="btn btn-success pull-right btn-sm">Mkopo Wa Maendeleo</a>
+<a href="{{url('/maendeleo/maendeleo')}}" class="btn btn-success pull-right btn-sm">Mkopo Wa Maendeleo</a>
 <br>
 <a href="{{ url('page/dharura') }}"  class="btn btn-success pull-right btn-sm">Mkopo wa Dharura</a>
 
