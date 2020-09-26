@@ -23,6 +23,7 @@
             <th>Muda wa Kulipa</th>
             
             <th>Awamu za kulipa</th>
+            <th>Action</th>
         </tr>
         @if($loans->count() >=1)
 @foreach($loans as $ln)
@@ -42,6 +43,7 @@
                 <td>{{ $ln->month_payment}}</td>
 
                 <td>{{ $ln->payment_phase}}</td>
+                <td>{{ $ln->complete? 'Completed' : 'Inafanyiwa Kazi' }}</td>
                 
 
 

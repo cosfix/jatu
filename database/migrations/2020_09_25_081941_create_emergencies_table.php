@@ -28,6 +28,7 @@ class CreateEmergenciesTable extends Migration
             $table->string('reason');
             $table->string('month_payment');
             $table->string('payment_phase');
+            $table->boolean('Approve')->default(false);
             $table->timestamps();
         });
     }
