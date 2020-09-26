@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\Auth;
+
 use Illuminate\Http\Request;
 use App\Emergency;
 class EmergencyController extends Controller
@@ -13,8 +13,7 @@ class EmergencyController extends Controller
      */
     public function index()
     {
-  
-        $loans = Emergency::where('id', Auth::id()); 
+        $loans = Emergency::get(); 
         return view('page.dharuraview',compact('loans') );
     }
 

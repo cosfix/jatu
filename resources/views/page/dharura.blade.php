@@ -31,13 +31,15 @@
  
   </div>
 </div>
+<hr>
+<label><b>B. MAOMBI YA MKOPO</b></label>
 <div class="form-group">
   <label class="col-md-4 control-label" for="text">Jina la Mrithi</label>  
   <div class="col-md-4">
   <input id="text" name="successor_name" type="text" placeholder="" class="form-control input-md" required="">
  
   </div>
-</div>
+
 <div class="form-group">
   <label class="col-md-4 control-label" for="text">Namba ya Simu ya Mrithi</label>  
   <div class="col-md-4">

@@ -15,6 +15,10 @@
 <a href="{{url('/page/maendeleo')}}" class="btn btn-success pull-right btn-sm">Mkopo Wa Maendeleo</a>
 <br>
 <a href="{{ url('page/dharura') }}"  class="btn btn-success pull-right btn-sm">Mkopo wa Dharura</a>
+<hr>
+<a href="{{ url('page/dharuraview') }}"  class="btn btn-primary pull-right btn-sm">Mkopo wa Dharura</a>
+
+
 
             </div>
         </div>

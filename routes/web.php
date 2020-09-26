@@ -20,11 +20,18 @@ Route::get('/', function () {
 Route::get('/page/dharura', function () {
     return view('/page/dharura');
 });
+Route::get('/admin/memberview', function () {
+    return view('/admin/memberview');
+});
+Route::get('/admin/uamuzi', function () {
+    return view('/admin/uamuzi');
+});
 // Route::get('/page/dharuraview', function () {
 //     return view('/page/dharuraview');
 // });
 
 Route::get('/page/dharuraview', 'EmergencyController@index')->name('dharula');
+Route::get('/admin/memberview', 'EmergencyController@index')->name('dharula2');
 
 Route::get('page/maendeleo', function () {
     return view('/page/maendeleo');
@@ -38,6 +45,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('emergency', 'EmergencyController');
+// Route::resource('uamuzi', 'DecisionController');
+Route::post('uamuzi', 'DecisionController@store')->name('uamuzi.store');
+
 
 Route::group(['middleware'=> ['auth','admin']], function(){});
 Route::get('/dashboard', function(){
