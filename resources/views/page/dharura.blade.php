@@ -20,7 +20,7 @@
 <div class="form-group ">
   <label class="col-md-4 control-label" for="text">Akiba Chamani</label>  
   <div class="col-md-4">
-  <input id="text" name="saving" type="text" placeholder="Mfano Tsh. !00,000/=" class="form-control input-md" required="">
+  <input id="text" name="saving" type="text" placeholder="Mfano Tsh. 100,000/=" class="form-control input-md" required="">
  
   </div>
 </div>
@@ -70,28 +70,28 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="text">Mapato kwa Siku</label>  
   <div class="col-md-4">
-  <input id="text" name="day_income" type="text" placeholder="AB 1111" class="form-control input-md" required="">
+  <input id="text" name="day_income" type="text" placeholder="Tsh. 40,000/=" class="form-control input-md" required="">
  
   </div>
 </div>
 <div class="form-group">
   <label class="col-md-4 control-label" for="text">Mapato Kwa Mwezi</label>  
   <div class="col-md-4">
-  <input id="text" name="month_income" type="text" placeholder="AB 1111" class="form-control input-md" required="">
+  <input id="text" name="month_income" type="text" placeholder="Ths. 120,000/=" class="form-control input-md" required="">
  
   </div>
 </div>
 <div class="form-group">
   <label class="col-md-4 control-label" for="text">Kiasi cha Mkopo</label>  
   <div class="col-md-4">
-  <input id="text" name="amount" type="text" placeholder="Mfano Tsh. !00,000/=" class="form-control input-md" required="">
+  <input id="text" name="amount" type="text" placeholder="Mfano Tsh. 600,000/=" class="form-control input-md" required="">
  
   </div>
 </div>
 <div class="form-group">
   <label class="col-md-4 control-label" for="text">Lengo la Mkopo</label>  
   <div class="col-md-4">
-  <input id="text" name="reason" type="text" placeholder="AB 1111" class="form-control input-md" required="">
+  <input id="text" name="reason" type="text" placeholder="Mfano Matibabu" class="form-control input-md" required="">
  
   </div>
 </div>
