@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Auth;
 use App\UserData;
 use Illuminate\Http\Request;
 
@@ -14,7 +14,9 @@ class UserDataController extends Controller
      */
     public function index()
     {
-        $loans = UserData::get(); 
+
+        //to make a User to see only their data
+        $loans = UserData::where('user_id', Auth::user()->id)->get(); 
         return view('page.userview',compact('loans') );
     }
 
@@ -38,6 +40,7 @@ class UserDataController extends Controller
     {
         $data = new UserData();
         $data->name =$request->name;
+        $data->user_id=Auth::user()->id;
         $data->address = $request->address;
         $data->phone = $request->phone;
         $data->work = $request->work;
@@ -77,7 +80,7 @@ class UserDataController extends Controller
     {
         $data = UserData::findOrFail($id);
 
-        return view('edit', compact('data'));
+        return view('page.useredit', with('data', $data));
         $data->save();
     }
 

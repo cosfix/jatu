@@ -66,8 +66,8 @@
       <input id="status" name="status" type="text" class="form-control">
     </div>
   </div><div class="form-group row">
-    <label for="radio" class="col-4 col-form-label">Dhamana</label> 
-    <div class="col-8">
+    <label for="radio" class="col-2 col-form-label">Dhamana</label> 
+    <div class="col-6">
       <select id="bond" name="bond" class="custom-select">
         <option value="AKIBA">AKIBA</option>
         <option value="MAZAO">MAZAO</option>
@@ -78,8 +78,10 @@
   <div class="form-group row">
     <div class="offset-4 col-6">
       <button name="submit" type="submit" class="btn btn-primary">Jaza</button>
+      <a href="{{ url('/home') }}" class="btn btn-default btn-sm">Cancel</a>
     </div>
   </div>
 </form>
 </div>
+
 @endsection

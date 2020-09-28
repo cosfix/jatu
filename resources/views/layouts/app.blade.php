@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <body>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -33,13 +33,8 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     Jatu Saccos
                 </a>
-                <!-- <a class="navbar-brand" href="{{ url('/page/dharura') }}">
-                    Dharura
-                </a>
-                <a class="navbar-brand" href="{{ url('/page/maendeleo') }}">
-                    Maendeleo
-                </a>
- -->                <button style="text-align: right;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+              
+                 <button style="text-align: right;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 

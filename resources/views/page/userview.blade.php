@@ -6,7 +6,7 @@
 <div>
 <table class="table table-striped custab">
     
-    
+    @auth
         <tr>
             <th>Jina Kamili</th>
             <th>Anwan</th>
@@ -44,6 +44,7 @@
             </tr>
 @endforeach
 @endif
+@endauth
 </table>
 </div>
 

@@ -14,8 +14,11 @@ class CreateUserDataTable extends Migration
     public function up()
     {
         Schema::create('user_data', function (Blueprint $table) {
-            $table->id()->nullable();
-            $table->foreign('id')->references('id')->on('users');
+            
+            $table->id();
+            //id to copy it
+            $table->integer('user_id');
+        
             $table->string('name');
             $table->string('address');
             $table->string('phone');
