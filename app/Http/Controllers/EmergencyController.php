@@ -16,7 +16,16 @@ class EmergencyController extends Controller
         $loans = Emergency::get(); 
         return view('page.dharuraview',compact('loans') );
     }
-
+    public function index2()
+    {
+        $loans = Emergency::get(); 
+        return view('admin.memberview',compact('loans') );
+    }
+    public function index3()
+    {
+        $loans = Emergency::get(); 
+        return view('page.dharuraview',compact('loans') );
+    }
     /**
      * Show the form for creating a new resource.
      *

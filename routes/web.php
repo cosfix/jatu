@@ -36,8 +36,8 @@ Route::get('/admin/chair', function () {
 
 
 Route::get('/page/dharuraview', 'EmergencyController@index')->name('dharula');
-Route::get('/admin/memberview', 'EmergencyController@index')->name('dharula2');
-Route::get('/admin/chair', 'EmergencyController@index')->name('dharula3');
+Route::get('/admin/memberview', 'EmergencyController@index2')->name('dharula2');
+Route::get('/admin/chair', 'EmergencyController@index3')->name('dharula3');
 
 
 Route::get('page/maendeleo', function () {
