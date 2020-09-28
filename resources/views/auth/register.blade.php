@@ -37,7 +37,7 @@
                             </div>
                         </div>
 
-<div class="form-group">
+<!-- <div class="form-group">
   <label class="col-md-4 control-label " for="selectbasic">Jinsia</label>
   <div class="col-md-4">
     <select id="gender" name="gender" class="form-control" >
@@ -47,7 +47,7 @@
   </div>
 </div>
 
-<!-- Text input-->
+
 <div class="form-group">
   <label class="col-md-4 control-label " for="location">Mtaa Anakoishi</label>  
   <div class="col-md-8">
@@ -56,13 +56,13 @@
   </div>
 </div>
 
-<!-- Text input-->
+
 <label for="example-date-input" class="col-4 col-form-label">Terehe Ya kujiunga</label>
   <div class="col-md-8">
     <input class="form-control" type="date" value="2020-09-25" id="example-date-input" name="date">
   </div>
 
-<!-- Text input-->
+ Text input-->
 <!-- <div class="form-group">
   <label class="col-md-4 control-label" for="saving">Akiba</label>  
   <div class="col-md-6">
@@ -71,14 +71,14 @@
   </div>
 </div> -->
 
-<!-- Text input-->
+<!-- 
 <div class="form-group">
   <label class="col-md-4 control-label " for="work">Shughuli Afanyayo</label>  
   <div class="col-md-8">
   <input id="work" name="work" type="text" placeholder="Mfano Mjasiliamali" class="form-control input-md" required="">
     
   </div>
-</div>
+</div> -->
 
 
 <!-- Text input-->
@@ -91,14 +91,14 @@
 </div> -->
 
 <!-- Text input-->
-<div class="form-group">
+<!-- <div class="form-group">
   <label class="col-md-4 control-label" for="phone">Namba Ya Simu</label>  
   <div class="col-md-8">
   <input id="phone" name="phone" type="text" placeholder="Mfano 0712836758" class="form-control input-md" required="">
     
   </div>
 </div>
- 
+  -->
 
 <!-- <div class="form-group">
   <label class="col-md-4 control-label" for="phone">Idadi Ya Tegemezi</label>  

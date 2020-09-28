@@ -7,10 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
+<!-- //error printing -->
+
 
 <form class="form-horizontal" action="{{url('emergency')}}" method="POST">
 <fieldset>
-
+{{csrf_field()}}
 <!-- Form Name -->
 <legend>Fomu Ya Mkopo Wa dharura</legend>
 
@@ -29,13 +31,15 @@
  
   </div>
 </div>
+<hr>
+<label><b>B. MAOMBI YA MKOPO</b></label>
 <div class="form-group">
   <label class="col-md-4 control-label" for="text">Jina la Mrithi</label>  
   <div class="col-md-4">
   <input id="text" name="successor_name" type="text" placeholder="" class="form-control input-md" required="">
  
   </div>
-</div>
+
 <div class="form-group">
   <label class="col-md-4 control-label" for="text">Namba ya Simu ya Mrithi</label>  
   <div class="col-md-4">
