@@ -15,7 +15,7 @@ class UserDataController extends Controller
     public function index()
     {
 
-        //to make a User to see only their data
+        //to make a User to see only their
         $loans = UserData::where('user_id', Auth::user()->id)->get(); 
         return view('page.userview',compact('loans') );
     }
@@ -64,10 +64,9 @@ class UserDataController extends Controller
      * @param  \App\UserData  $userData
      * @return \Illuminate\Http\Response
      */
-    public function show(UserData $id)
+    public function show( $id)
     {
         $data = UserData::find($id);
-        return view('data.edit', compact('data'));
     }
 
     /**
@@ -79,9 +78,9 @@ class UserDataController extends Controller
     public function edit($id)
     {
         $data = UserData::findOrFail($id);
-
-        return view('page.useredit', with('data', $data));
-        $data->save();
+        // return $data;
+        return view('page.useredit', compact('data'));
+        //$data->save();
     }
 
     /**

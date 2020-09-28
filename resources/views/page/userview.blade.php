@@ -34,7 +34,7 @@
                 <td>{{ $ln->created_at}}</td>
                 
                 <td>
-                <a href="" class="btn btn-primary pull-right btn-sm">EDIT</a>
+                <a href="{{route('edit.data',$ln->id)}}" class="btn btn-primary pull-right btn-sm">EDIT</a>
                
                 
                 </td>

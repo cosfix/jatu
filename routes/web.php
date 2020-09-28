@@ -67,10 +67,16 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('emergency', 'EmergencyController');
+
+
 Route::resource('useredit', 'UserDataController');
-// Route::resource('uamuzi', 'DecisionController');
+
+
+
 Route::post('uamuzi', 'DecisionController@store')->name('uamuzi.store');
 Route::post('userdata', 'UserDataController@store')->name('data.store');
+Route::get('page/useredit/{id}', 'UserDataController@edit')->name('edit.data');
+Route::post('page/useredit/{id}', 'UserDataController@update')->name('update.data');
 
 // admin authetication
 Route::group(['middleware'=> ['auth','admin']], function(){});
