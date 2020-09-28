@@ -110,7 +110,10 @@ class EmergencyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+         $loan = Emergency::findOrFail($id);
+        $loan->Approve= !$loan->Approve;
+        $laon->save();
+
     }
 
     /**

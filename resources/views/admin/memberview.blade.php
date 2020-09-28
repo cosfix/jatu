@@ -16,6 +16,7 @@
             <th>Mapato kwa Mwezi</th>
             <th>Kiasi cha Mkopo</th>
             <th>Lengo la Mkopo</th>
+            <th>Action</th>
         </tr>
         @if($loans->count() >=1)
 @foreach($loans as $ln)
@@ -28,6 +29,7 @@
                 <td>{{ $ln->reason}}</td>
                 <td>{{ $ln->month_payment}}</td>
                 <td>{{ $ln->payment_phase}}</td>
+                <td><a href="" class="btn btn-success btn-xs">Complete</a></td>
             </tr>
 @endforeach
 @endif
