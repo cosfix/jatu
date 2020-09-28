@@ -33,9 +33,12 @@
                 <td>{{ $ln->bond}}</td>
                 <td>{{ $ln->created_at}}</td>
                 
+                <td>
+                <a href="{{ route('page.useredit', $ln->id)}}" class="btn btn-primary pull-right btn-sm">EDIT</a>
                
-                <td>{{ $ln->complete? 'Completed' : 'Inafanyiwa Kazi' }}</td>
                 
+                </td>
+               
 
 
             </tr>
@@ -44,5 +47,5 @@
 </table>
 </div>
 
- 
+<a href="{{ url('/home') }}" class="btn btn-default pull-right btn-sm">Go back</a>
 @endsection

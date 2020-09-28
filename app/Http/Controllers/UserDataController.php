@@ -61,9 +61,10 @@ class UserDataController extends Controller
      * @param  \App\UserData  $userData
      * @return \Illuminate\Http\Response
      */
-    public function show(UserData $userData)
+    public function show(UserData $id)
     {
-        //
+        $data = UserData::find($id);
+        return view('data.edit', compact('data'));
     }
 
     /**
@@ -72,9 +73,12 @@ class UserDataController extends Controller
      * @param  \App\UserData  $userData
      * @return \Illuminate\Http\Response
      */
-    public function edit(UserData $userData)
+    public function edit($id)
     {
-        //
+        $data = UserData::findOrFail($id);
+
+        return view('edit', compact('data'));
+        $data->save();
     }
 
     /**
@@ -84,9 +88,21 @@ class UserDataController extends Controller
      * @param  \App\UserData  $userData
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, UserData $userData)
+    public function update(Request $request, $id )
     {
-        //
+    
+        $validatedData = $request->validate([
+            'name' => 'required',
+            'address' => 'required',
+            'phone' => 'required',
+            'work' => 'required',
+            'location' => 'required',
+            'street' => 'required',
+            'status' => 'required',
+        ]);
+        UserData::whereId($id)->update($validatedData);
+
+        return redirect('/home')->with('success', ' Data is successfully updated');
     }
 
     /**

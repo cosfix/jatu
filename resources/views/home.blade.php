@@ -16,7 +16,7 @@
 <br>
 <a href="{{ url('page/dharura') }}"  class="btn btn-success pull-right btn-sm">Mkopo wa Dharura</a>
 <hr>
-<a href="{{ url('page/dharuraview') }}"  class="btn btn-primary pull-right btn-sm">Mkopo wa Dharura</a>
+
 <a href="{{ url('page/userview') }}"  class="btn btn-primary pull-right btn-sm">Angalia Data</a>
 
 
